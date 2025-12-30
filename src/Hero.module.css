@@ -1,0 +1,60 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #0b0b0b;
+}
+
+.heroBg {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  right: 0;
+  height: 160%;
+  background-size: cover;
+  background-position: center;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.85)
+  );
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  max-width: 640px;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eyebrow {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a0a0a0;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 68px;
+  margin-bottom: 16px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #d0d0d0;
+  max-width: 520px;
+}
