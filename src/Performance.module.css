@@ -1,8 +1,8 @@
 .section {
   min-height: 80vh;
   position: relative;
-  margin-top: -6vh;
-  padding-top: 12vh;
+  margin-top: -4vh;
+  padding-top: calc(8vh + 4vh);
   display: flex;
   align-items: center;
   background-color: #0b0b0b;

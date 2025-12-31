@@ -14,16 +14,16 @@ export default function DesignInterior() {
     const section = sectionRef.current;
 
     /* Ambient image parallax */
-    gsap.to(imageRef.current, {
-      y: -40,
-      ease: "none",
-      scrollTrigger: {
-        trigger: section,
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true
-      }
-    });
+gsap.to(imageRef.current, {
+  y: -40,
+  ease: "none",
+  scrollTrigger: {
+    trigger: section,
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true
+  }
+});
 
     /* Soft text entrance */
     gsap.from(textRef.current, {

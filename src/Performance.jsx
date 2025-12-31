@@ -10,6 +10,7 @@ export default function Performance() {
   const headingRef = useRef(null);
   const textRef = useRef(null);
   const statsRef = useRef([]);
+  const statsWrapperRef = useRef(null);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -65,6 +66,17 @@ export default function Performance() {
       }
     });
 
+    gsap.to(statsWrapperRef.current, {
+  y: -25,
+  ease: "none",
+  scrollTrigger: {
+    trigger: section,
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true
+  }
+});
+
     return () => {
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };
@@ -73,7 +85,7 @@ export default function Performance() {
   return (
     <section ref={sectionRef} className={styles.section}>
       <div className={styles.inner}>
-  <div className={styles.left}>
+     <div className={styles.left}>
     <h2 ref={headingRef} className={styles.title}>
       Performance, refined
     </h2>
@@ -84,7 +96,7 @@ export default function Performance() {
     </p>
   </div>
 
-  <div className={styles.right}>
+  <div ref={statsWrapperRef} className={styles.right}>
     {[
       { value: "3.2s", label: "0–100 km/h" },
       { value: "AWD", label: "Dual motor" },

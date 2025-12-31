@@ -1,0 +1,52 @@
+.section {
+  min-height: 60vh;
+  padding: 10vh 0;
+  background-color: #0b0b0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.inner {
+  max-width: 720px;
+  padding: 0 10%;
+}
+
+.label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.title {
+  font-size: 56px;
+  line-height: 1.05;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.body {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #cfcfcf;
+  margin-bottom: 40px;
+}
+
+.button {
+  padding: 14px 32px;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.button:hover {
+  background: #ffffff;
+  color: #0b0b0b;
+}

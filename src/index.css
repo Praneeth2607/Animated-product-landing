@@ -11,3 +11,15 @@ body {
   color: #eaeaea;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 0);
+  background-size: 3px 3px;
+  opacity: 0.35;
+}
