@@ -47,7 +47,7 @@ export default function Performance() {
         {
           y: 40,
           opacity: 0,
-          duration: 1.0,
+          duration: 0.5,
           stagger: 0.15,
           ease: "power2.out"
         },
@@ -60,7 +60,7 @@ export default function Performance() {
       ease: "none",
       scrollTrigger: {
         trigger: section,
-        start: "top 0%",
+        start: "top 30%",
         end: "bottom top",
         scrub: true
       }
